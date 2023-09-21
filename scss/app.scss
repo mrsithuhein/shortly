@@ -48,6 +48,32 @@ $spacers: (
   height: 500px;
 }
 
+@include media-breakpoint-only(lg) {
+  #hero {
+    background-size: 55%;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  #hero {
+    background-size: 45%;
+    background-position: center bottom -10px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #hero {
+    background-size: 100%;
+  }
+}
+
+
+@include media-breakpoint-only(xxl) {
+  #hero {
+    background-position: right 150px bottom;
+  }
+}
+
 #shorten {
   background-color: hsl(0, 0%, 75%);
 }
@@ -79,4 +105,8 @@ $spacers: (
     font-size: 15px;
     margin-bottom: 10px;
   }
+}
+
+.fact {
+  height: 300px;
 }
